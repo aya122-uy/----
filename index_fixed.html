@@ -1,0 +1,1020 @@
+<html dir="rtl" lang="ar">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   مكتبة كلية التربية النوعية – جامعة المنوفية
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+    font-family: 'Cairo', sans-serif;
+  }
+  </style>
+ </head>
+ <body class="bg-gray-50 min-h-screen flex flex-col">
+  <!-- Navigation Bar -->
+  <nav class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-14">
+     <div class="flex space-x-2 rtl:space-x-reverse overflow-x-auto no-scrollbar">
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="1">
+       الواجهة الترحيبية
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="2">
+       تسجيل الدخول
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="3">
+       المساعدة
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="4">
+       التعليمات
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="5">
+       تحديد الفئة
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="6">
+       إضافة كتاب جديد
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="7">
+       الاستعارة
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="8">
+       حجز الكتب
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="9">
+       الخدمات
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="10">
+       الفعاليات
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="11">
+       الاستبيانات
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="12">
+       الشات بوت
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="13">
+       المزيد
+      </button>
+      <button class="nav-tab px-3 py-2 hover:bg-blue-700 rounded focus:outline-none focus:ring-2 focus:ring-white whitespace-nowrap" data-page="14">
+       المقترحات
+      </button>
+     </div>
+    </div>
+   </div>
+  </nav>
+  <!-- Pages Container -->
+  <main class="flex-grow max-w-4xl mx-auto p-4 w-full">
+   <!-- Page 1: الواجهة الترحيبية -->
+   <section class="page flex flex-col items-center justify-center space-y-6" data-page="1">
+<img src="https://i.postimg.cc/cHSh8hnb/2.png
+
+" alt="مكتبتك">
+
+     <h1 class="text-3xl font-bold text-blue-900">
+      مرحباً بكم في مكتبة كلية التربية النوعية – جامعة المنوفية
+     </h1>
+     <button class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-1">
+      التالي
+     </button>
+    </div>
+   </section>
+   <!-- Page 2: تسجيل الدخول -->
+   <section class="page hidden" id="page-2">
+    <form class="max-w-md mx-auto bg-white p-6 rounded shadow space-y-6" id="login-form">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      تسجيل الدخول
+     </h2>
+     <div>
+      <label class="block mb-1 font-medium text-gray-700" for="email">
+       البريد الإلكتروني
+      </label>
+      <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="email" name="email" placeholder="example@domain.com" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-1 font-medium text-gray-700" for="password">
+       كلمة المرور
+      </label>
+      <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="password" name="password" placeholder="********" required="" type="password"/>
+     </div>
+     <div class="flex justify-between">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-2" type="button">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" type="submit">
+       تم
+      </button>
+      <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="next-2" type="button">
+       التالي
+      </button>
+     </div>
+    </form>
+   </section>
+   <!-- Page 3: المساعدة -->
+   <section class="page hidden" id="page-3">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-4">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      المساعدة
+     </h2>
+     <p>
+      موقع الكلية من الرابط:
+      <a class="text-blue-700 underline" href="https://share.google/IezTg1Yf9DsSUAKAD" target="_blank">
+       https://share.google/IezTg1Yf9DsSUAKAD
+      </a>
+     </p>
+     <p>
+      <strong>
+       البريد الإلكتروني للمكتبة:
+      </strong>
+      <a class="text-blue-700 underline" href="mailto:librarynawaya.com">
+       librarynawaya.com
+      </a>
+     </p>
+     <p>
+      <strong>
+       تليفون المكتبة:
+      </strong>
+      01027318921
+     </p>
+     <p>
+      <strong>
+       مواقع التواصل الاجتماعي للمكتبة:
+      </strong>
+      <a class="text-blue-700 underline" href="mailto:library2020@yahoo.com">
+       library2020@yahoo.com
+      </a>
+     </p>
+     <p>
+      <strong>
+       مواعيد العمل:
+      </strong>
+      يومياً من 9 صباحاً حتى 2 مساءً عدا الجمعة
+     </p>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-3">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-3">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 4: التعليمات -->
+   <section class="page hidden" id="page-4">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-4">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      التعليمات
+     </h2>
+     <ol class="list-decimal list-inside space-y-2 text-gray-800 leading-relaxed">
+      <li>
+       الالتزام بمواعيد العمل بالمكتبة.
+      </li>
+      <li>
+       وضع الحقائب والأغراض الشخصية في الأماكن المخصصة لذلك.
+      </li>
+      <li>
+       الحرص على إبراز البطاقة الجامعيَّة (للطُّلاب والطَّالبات) عند الدُّخول إلى المكتبة.
+      </li>
+      <li>
+       الاستعانة بأخصائي المعلومات لمعرفة أماكن تواجد الأوعية التي تريدها.
+      </li>
+      <li>
+       استخدام مقتنيات المكتبة المتاحة بمسئولية والحفاظ عليها.
+      </li>
+      <li>
+       الالتزام بالهدوء التام وتجنب إزعاج الآخرين بالصوت أو الحركة، ويحظر تناول الأطعمة والمشروبات داخل المكتبة.
+      </li>
+      <li>
+       يمنع استخدام المكتبة لغير أغراض البحث والدراسة.
+      </li>
+      <li>
+       علي المستفيد ترك أوعية المعلومات عند الانتهاء من استخدامها علي المناضد وعدم إعادتها علي الأرفف.
+      </li>
+      <li>
+       يحظر إساءة استخدام أوعية المعلومات، كالتعليق عليها أو وضع علامة أو الكشط أو الشف منها أو التمزيق أو التدوين عليها وغير ذلك من أشكال الاعتداء المعرفي.
+      </li>
+      <li>
+       المكتبة غير مسئولة عن فقدان الأغراض الشخصية الخاصة بالمستفيد.
+      </li>
+     </ol>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-4">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-4">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 5: تحديد الفئة -->
+   <section class="page hidden" id="page-5">
+    <div class="bg-white p-6 rounded shadow max-w-md mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      تحديد الفئة
+     </h2>
+     <form class="space-y-4" id="category-form">
+      <div>
+       <input class="mr-2" id="bachelor" name="category" type="radio" value="طلبة البكالوريوس"/>
+       <label class="cursor-pointer" for="bachelor">
+        طلبة البكالوريوس
+       </label>
+      </div>
+      <div>
+       <input class="mr-2" id="postgraduate" name="category" type="radio" value="طلبة الدراسات العليا"/>
+       <label class="cursor-pointer" for="postgraduate">
+        طلبة الدراسات العليا
+       </label>
+      </div>
+      <div>
+       <input class="mr-2" id="staff" name="category" type="radio" value="العاملين بالكلية"/>
+       <label class="cursor-pointer" for="staff">
+        العاملين بالكلية
+       </label>
+      </div>
+      <div>
+       <input class="mr-2" id="faculty" name="category" type="radio" value="أعضاء هيئة التدريس والهيئة المعاونة"/>
+       <label class="cursor-pointer" for="faculty">
+        أعضاء هيئة التدريس والهيئة المعاونة
+       </label>
+      </div>
+      <div>
+       <input class="mr-2" id="external" name="category" type="radio" value="الباحثين من خارج الكلية والجامعة"/>
+       <label class="cursor-pointer" for="external">
+        الباحثين من خارج الكلية والجامعة
+       </label>
+      </div>
+     </form>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-5">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-5">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 6: إضافة كتاب جديد -->
+   <section class="page hidden" id="page-6">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      إضافة كتاب جديد
+     </h2>
+     <form class="space-y-4" id="add-book-form">
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="book-image-upload">
+        رفع صورة الكتاب
+       </label>
+       <input accept="image/*" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="book-image-upload" type="file"/>
+      </div>
+      <div class="flex justify-center">
+       <img alt="صورة كتاب افتراضية بمقاس 150x200 بيكسل، غلاف كتاب ملون مع عنوان واضح" class="w-36 h-48 object-contain border border-gray-300 rounded" height="200" id="book-image-preview" src="https://storage.googleapis.com/a1aa/image/94cc1151-7677-41c8-6740-8748f28458f3.jpg" width="150"/>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="book-name">
+        اسم الكتاب
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="book-name" name="book-name" placeholder="أدخل اسم الكتاب" type="text"/>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="book-category">
+        القسم الذي ينتمي له الكتاب
+       </label>
+       <select class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="book-category" name="book-category">
+        <option disabled="" selected="" value="">
+         اختر القسم
+        </option>
+        <option value="تكنولوجيا التعليم">
+         تكنولوجيا التعليم
+        </option>
+        <option value="الأدب">
+         الأدب
+        </option>
+        <option value="التربية الفنية والتربية النفسية">
+         التربية الفنية والتربية النفسية
+        </option>
+        <option value="الاقتصاد المنزلي">
+         الاقتصاد المنزلي
+        </option>
+       </select>
+      </div>
+      <div class="flex justify-between">
+       <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500" id="download-book" type="button">
+        تنزيل الكتاب
+       </button>
+       <button class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500" id="delete-book" type="button">
+        حذف الكتاب
+       </button>
+      </div>
+      <div class="flex justify-between mt-6">
+       <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-6">
+        السابق
+       </button>
+       <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-6">
+        التالي
+       </button>
+      </div>
+     </form>
+    </div>
+   </section>
+   <!-- Page 7: الاستعارة -->
+   <section class="page hidden" id="page-7">
+    <div class="bg-white p-6 rounded shadow max-w-4xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      ارشادات الاستعارة
+     </h2>
+     <table class="w-full text-right border border-gray-300 rounded overflow-hidden">
+      <thead class="bg-blue-900 text-white">
+       <tr>
+        <th class="p-2 border-l border-gray-300">
+         فئة المستفيد
+        </th>
+        <th class="p-2 border-l border-gray-300">
+         عدد الكتب
+        </th>
+        <th class="p-2 border-l border-gray-300">
+         المدة المسموح بها للإعارة
+        </th>
+        <th class="p-2">
+         التجديد
+        </th>
+       </tr>
+      </thead>
+      <tbody class="text-gray-800">
+       <tr class="border-t border-gray-300">
+        <td class="p-2 border-l border-gray-300">
+         أعضاء هيئة التدريس
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         5 كتب
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         15 يوم
+        </td>
+        <td class="p-2">
+         التجديد نصف المدة المسموح بها
+        </td>
+       </tr>
+       <tr class="border-t border-gray-300 bg-gray-50">
+        <td class="p-2 border-l border-gray-300">
+         المدرسين المساعدين والمعيدين
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         4 كتب
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         15 يوم
+        </td>
+        <td class="p-2">
+        </td>
+       </tr>
+       <tr class="border-t border-gray-300">
+        <td class="p-2 border-l border-gray-300">
+         العاملين بالجامعة
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         3 كتب
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         15 يوم
+        </td>
+        <td class="p-2">
+        </td>
+       </tr>
+       <tr class="border-t border-gray-300 bg-gray-50">
+        <td class="p-2 border-l border-gray-300">
+         طلبة الدراسات العليا
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         3 كتب
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         15 يوم
+        </td>
+        <td class="p-2">
+        </td>
+       </tr>
+       <tr class="border-t border-gray-300">
+        <td class="p-2 border-l border-gray-300">
+         طالب جامعي
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         2 كتب
+        </td>
+        <td class="p-2 border-l border-gray-300">
+         أسبوع
+        </td>
+        <td class="p-2">
+        </td>
+       </tr>
+      </tbody>
+     </table>
+     <form class="mt-6 max-w-md mx-auto space-y-4 bg-gray-50 p-4 rounded border border-gray-300" id="borrow-request-form">
+      <h3 class="text-xl font-semibold text-blue-900 mb-3 text-center">
+       نموذج طلب الاستعارة
+      </h3>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="visitor-name">
+        اسم الزائر
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="visitor-name" name="visitor-name" placeholder="أدخل اسم الزائر" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="book-name-borrow">
+        اسم الكتاب
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="book-name-borrow" name="book-name-borrow" placeholder="أدخل اسم الكتاب" required="" type="text"/>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="borrow-date">
+        تاريخ الاستعارة
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="borrow-date" name="borrow-date" required="" type="date"/>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="return-date">
+        تاريخ الاسترداد
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="return-date" name="return-date" required="" type="date"/>
+      </div>
+     </form>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-7">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-7">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 8: حجز الكتب -->
+   <section class="page hidden" id="page-8">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      حجز الكتب
+     </h2>
+     <form class="space-y-4" id="book-reservation-form">
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="book-name-reserve">
+        اسم الكتاب
+       </label>
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="book-name-reserve" name="book-name-reserve" placeholder="أدخل اسم الكتاب" type="text"/>
+      </div>
+      <div class="flex items-center space-x-4 rtl:space-x-reverse">
+       <label class="inline-flex items-center cursor-pointer">
+        <input class="form-checkbox text-blue-600" id="available" name="availability" type="checkbox" value="متوفر"/>
+        <span class="mr-2">
+         متوفر
+        </span>
+       </label>
+       <label class="inline-flex items-center cursor-pointer">
+        <input class="form-checkbox text-blue-600" id="not-available" name="availability" type="checkbox" value="غير متوفر"/>
+        <span class="mr-2">
+         غير متوفر
+        </span>
+       </label>
+      </div>
+     </form>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-8">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-8">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 9: الخدمات -->
+   <section class="page hidden" id="page-9">
+    <div class="bg-white p-6 rounded shadow max-w-4xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      الخدمات
+     </h2>
+     <div class="space-y-4">
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        1- خدمة الارشاد والبحث
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-2">
+        <p>
+         تقدم المكتبة هذه الخدمة من خلال نظام آلي متكامل يعمل تحت مظلة المجلس العالي للجامعات وهو نظام المستقبل للمكتبات Future Library System.
+        </p>
+        <p>
+         ولتقديم هذه الخدمة وفرت المكتبة ما يلي :
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+         <li>
+          أجهزة حاسب إلي متطورة متصلة بالانترنت وتعمل علي النظام.
+         </li>
+         <li>
+          أخصائي معلومات متخصصين في البحث علي النظام يقوموا بمساعدة المستفيد عند دخوله المكتبة.
+         </li>
+         <li>
+          يقوم المستفيد بعرض الموضوعات التي يريد الاطلاع عليها أو عناوين الكتب التي يحتاج لقراءتها، ويقوم الأخصائي بالبحث عنها علي النظام واستخراج أرقام التصنيف الخاصة بها حتي يستطيع المستفيد إخراجها من علي الأرفف.
+         </li>
+         <li>
+          بالإضافة إلي مساعدة المستفيد في معرفة المكتبات التي يوجد بها الأوعية التي يريدها في حالة عدم تواجدها بالمكتبة.
+         </li>
+        </ul>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        2- خدمة الاطلاع الداخلي
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-2">
+        <p>
+         تقدم المكتبة هذه الخدمة لجميع المستفيدين منها وذلك من خلال سياسة واضحة تتوفر بداخلها المقومات الأساسية لتقديم الخدمة وهي :
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+         <li>
+          توفر المكتبة عدد 2 قاعة للاطلاع الداخلي وهما :
+         </li>
+         <ul class="list-disc list-inside pl-6 space-y-1">
+          <li>
+           أ - قاعة رئيسية: وتضم الكتب العربية والأجنبية والمعاجم والقواميس والموسوعات.
+          </li>
+          <li>
+           ب - قاعة الرسائل العلمية.
+          </li>
+         </ul>
+         <li>
+          توفر المكتبة المناضد والكراسي اللازمة لجلوس المستفيدين.
+         </li>
+         <li>
+          تتمتع المكتبة بجو هادئ وإضاءة مناسبة وتهوية.
+         </li>
+         <li>
+          توفر المكتبة أوعية معلومات تخدم جميع أقسام وتخصصات الكلية، بالإضافة إلي كتب المعارف العامة والتاريخ والجغرافيا والديانات.
+         </li>
+        </ul>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        3- خدمة التصوير
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-2">
+        <p>
+         توفر المكتبة ماكينة تصوير موجودة بداخلها ومختص للعمل عليها وهناك مجموعه من الضوابط تحكم هذه العملية وهي :
+        </p>
+        <ul class="list-disc list-inside space-y-1">
+         <li>
+          تبدأ عملية التصوير بالمكتبة من الساعة التاسعة صباحا وحتي الثانية مساءا.
+         </li>
+         <li>
+          لا يمكن بأي حال من الأحوال تصوير الكتاب بالكامل أو أحد فصوله كاملة وذلك طبقا للائحة مكتبات جامعة المنوفية ومراعاة لحقوق المؤلف.
+         </li>
+         <li>
+          بالنسبة للرسالة العلمية المتاح للتصوير منها الغلاف والمقدمة وعدد 25 ورقة من داخل الرسالة.
+         </li>
+         <li>
+          في حالة ازدحام المكتبة بمن يريدون التصوير يحق للمختص المسئول عن الماكينة أن يسجل أرقام الصفحات التي يريد المستفيد تصويرها وعددها ويدفع المستفيد ثمن التصوير ويأتي في وقت لاحق للحصول علي الورق المصور.
+         </li>
+         <li>
+          التعامل في حدود اللياقة مع المسئول عن التصوير حتي لا يحرم المستفيد من التصوير نهائيا.
+         </li>
+         <li>
+          يحدد سعر ورقة التصوير بناءا تقدير لجنة المكتبة وموافقة ا.د/ عميد الكلية.
+         </li>
+         <li>
+          يحق للمستفيد الحصول علي إيصال بالمبلغ الذي دفعه نظير عملية التصوير.
+         </li>
+        </ul>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        4- خدمة الاستعارة الخارجية
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed">
+        <p>
+         تتيح هذه الخدمة للمستفيد إمكانية اصطحاب عدد معين من الكتب تحدده المكتبة طبقا لفئة المستعير إلي المنزل لفترة محددة.
+        </p>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        5- خدمة حجز الأوعية
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-2">
+        <p>
+         يحق للمستفيد حجز وعاء معين لاستعارته من المكتبة وذلك من خلال إرسال رسالة عبر النظام الآلي من صفحة المستفيد علي النظام.
+        </p>
+        <p>
+         أسبقية الحجز تعني أسبقية الاستعارة في حال تكرار طلب نفس الوعاء.
+        </p>
+        <p>
+         يحق للمكتبة قبول أو رفض طلب الحجز حسب مدي الحاجة للوعاء من عدمه.
+        </p>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        8- الخدمة المرجعية
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-1">
+        <p>
+         تقدم المكتبة العديد من الخدمات المرجعية من خلال النظام الآلي الذي تعمل من خلاله وهو نظام المستقبل للمكتبات.
+        </p>
+        <ul class="list-disc list-inside">
+         <li>
+          الإحاطة الجارية.
+         </li>
+         <li>
+          استفسارات المستفيدين.
+         </li>
+         <li>
+          الأسئلة الأكثر تكرارا.
+         </li>
+         <li>
+          المراجع الالكترونية.
+         </li>
+        </ul>
+       </div>
+      </details>
+      <details class="border border-gray-300 rounded p-4">
+       <summary class="cursor-pointer font-semibold text-blue-900 text-lg">
+        9- خدمة قواعد البيانات
+       </summary>
+       <div class="mt-2 text-gray-800 leading-relaxed space-y-2">
+        <p>
+         المجلس الاعلي للجامعات قام بالتعاقد مع عدد من الناشرين العالميين الذين يتيحون قواعد بيانات تحتوي علي كم هائل من المعلومات والأبحاث والمقالات والكتب والرسائل العلمية في مختلف فروع المعرفة البشرية، وقام بإتاحتها علي النظام الآلي المسمي بنظام المستقبل للمكتبات Future Library System.
+        </p>
+       </div>
+      </details>
+     </div>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-9">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-9">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 10: الفعاليات -->
+   <section class="page hidden" id="page-10">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      الفعاليات
+     </h2>
+     <form class="space-y-4" id="events-form">
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="event-article">
+        مقال عن الدورات والورش
+       </label>
+       <textarea class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="event-article" placeholder="أدخل نص المقال هنا" rows="5"></textarea>
+      </div>
+      <div>
+       <label class="block mb-1 font-medium text-gray-700" for="event-image-upload">
+        رفع صورة
+       </label>
+       <input accept="image/*" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="event-image-upload" type="file"/>
+      </div>
+     </form>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-10">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-10">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 11: الاستبيانات -->
+   <section class="page hidden" id="page-11">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      الاستبيانات
+     </h2>
+     <form class="space-y-4" id="surveys-form">
+      <div class="space-y-2" id="survey-links-container">
+       <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" placeholder="أدخل رابط الاستبيان" type="url"/>
+      </div>
+      <button class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="add-survey-link" type="button">
+       إضافة رابط استبيان جديد
+      </button>
+     </form>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-11">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-11">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 12: الشات بوت -->
+   <section class="page hidden" id="page-12">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto flex flex-col space-y-4">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      الشات بوت
+     </h2>
+     <div class="flex flex-col space-y-3 h-96 overflow-y-auto border border-gray-300 rounded p-4 bg-gray-50" id="chat-container">
+      <!-- Chat messages will appear here -->
+     </div>
+     <form class="flex space-x-2 rtl:space-x-reverse" id="chat-form">
+      <input autocomplete="off" class="flex-grow border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="chat-input" placeholder="اكتب استفسارك هنا..." type="text"/>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" type="submit">
+       إرسال
+      </button>
+     </form>
+     <div class="flex justify-between mt-2">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-12">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-12">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 13: المزيد -->
+   <section class="page hidden" id="page-13">
+    <div class="bg-white p-6 rounded shadow max-w-4xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      المزيد
+     </h2>
+     <div class="space-y-4 text-gray-800 leading-relaxed">
+      <div>
+       <h3 class="font-semibold text-lg text-blue-900 mb-2">
+        ما هو اتحاد مكتبات الجامعات المصرية؟
+       </h3>
+       <p>
+        هو كونسورتيوم (تحالف) يضم مكتبات الجامعات المصرية الحكومية والخاصة، تحت مظلة المجلس الأعلى للجامعات، بهدف توحيد وتطوير البنية التحتية والخدمات الرقمية للمكتبات الجامعية في مصر.
+       </p>
+       <ul class="list-disc list-inside mt-2">
+        <li>
+         أبواب البحث الرئيسية تمكنك من البحث عن: يتيح المقتنيات الأكاديمية (كتب، رسائل ماجستير ودكتوراه، مجلات دورية)، باستخدام عنوان، مؤلف، موضوع، أو كلمات مفتاحية.
+        </li>
+        <li>
+         الوصول إلى النظام موفَّر مجانًا، ولا يحتاج حساب تسجيل للدخول سواء من داخل مصر أو خارجها.
+        </li>
+       </ul>
+       <p class="mt-2">
+        الرابط:
+        <a class="text-blue-700 underline" href="http://www.eulc.edu.eg/eulc_v5/libraries/start.aspx?ScopeID=1.&amp;fn=SearchInterFace&amp;flag=Thesis" target="_blank">
+         http://www.eulc.edu.eg/eulc_v5/libraries/start.aspx?ScopeID=1.&amp;fn=SearchInterFace&amp;flag=Thesis
+        </a>
+       </p>
+      </div>
+      <div>
+       <h3 class="font-semibold text-lg text-blue-900 mb-2">
+        موقع بنك المعرفة المصري
+       </h3>
+       <p>
+        بنك المعرفة المصري هو مبادرة أطلقتها الدولة المصرية في عام 2016 بهدف إتاحة مصادر المعرفة والمحتوى العلمي والثقافي مجانًا لكل فئات المجتمع المصري، سواء طلاب، باحثين، معلمين، أطباء أو عامة الناس. يُعد من أكبر المكتبات الرقمية في العالم من حيث المحتوى، ويضم آلاف الكتب والمقالات والأبحاث والدورات التعليمية من كبرى دور النشر العالمية مثل Springer، Elsevier، Britannica.
+       </p>
+       <h4 class="font-semibold mt-3">
+        كيفية الدخول على بنك المعرفة المصري:
+       </h4>
+       <ol class="list-decimal list-inside space-y-1">
+        <li>
+         زيارة الموقع الرسمي:
+         <a class="text-blue-700 underline" href="https://www.ekb.eg" target="_blank">
+          https://www.ekb.eg
+         </a>
+        </li>
+        <li>
+         اختيار البوابة المناسبة حسب الفئة (باحث، معلم، طالب، قارئ عام).
+        </li>
+        <li>
+         إنشاء حساب جديد (إذا لم تكن مسجلاً):
+         <ul class="list-disc list-inside pl-6">
+          <li>
+           الضغط على "تسجيل".
+          </li>
+          <li>
+           اختيار الفئة.
+          </li>
+          <li>
+           ملء البيانات المطلوبة (الاسم، البريد الإلكتروني، الرقم القومي، الجهة التعليمية، إلخ).
+          </li>
+          <li>
+           سيتم إرسال رسالة تأكيد إلى بريدك الإلكتروني لتفعيل الحساب.
+          </li>
+         </ul>
+        </li>
+        <li>
+         تسجيل الدخول: بعد التفعيل، يمكن الدخول باستخدام البريد الإلكتروني وكلمة المرور.
+        </li>
+       </ol>
+      </div>
+     </div>
+     <div class="flex justify-between mt-6">
+      <button class="bg-gray-400 text-white px-4 py-2 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-600" id="prev-13">
+       السابق
+      </button>
+      <button class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" id="next-13">
+       التالي
+      </button>
+     </div>
+    </div>
+   </section>
+   <!-- Page 14: المقترحات -->
+   <section class="page hidden" id="page-14">
+    <div class="bg-white p-6 rounded shadow max-w-3xl mx-auto space-y-6">
+     <h2 class="text-2xl font-semibold text-blue-900 mb-4 text-center">
+      المقترحات
+     </h2>
+     <form class="space-y-4" id="suggestions-form">
+      <label class="block mb-1 font-medium text-gray-700" for="suggestion-text">
+       اكتب اقتراحات لتحسين خدمات المكتبة
+      </label>
+      <textarea class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600" id="suggestion-text" placeholder="اكتب اقتراحك هنا..." rows="6"></textarea>
+      <button class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-600" type="submit">
+       تم
+      </button>
+     </form>
+    </div>
+   </section>
+  </main>
+  <script>
+   // Navigation and page management
+  const pages = Array.from(document.querySelectorAll('.page'));
+  const navTabs = Array.from(document.querySelectorAll('.nav-tab'));
+  let currentPage = 1;
+
+  function showPage(num) {
+    pages.forEach((p, i) => {
+      p.classList.toggle('hidden', i !== num - 1);
+    });
+    navTabs.forEach(tab => {
+      tab.classList.toggle('bg-blue-700', tab.dataset.page == num);
+      tab.classList.toggle('font-bold', tab.dataset.page == num);
+    });
+    currentPage = num;
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+
+  navTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      showPage(parseInt(tab.dataset.page));
+    });
+  });
+
+  // Next and Previous buttons handlers
+  function addNavButtonsListeners() {
+    for(let i=1; i<=14; i++) {
+      const prevBtn = document.getElementById(`prev-${i}`);
+      const nextBtn = document.getElementById(`next-${i}`);
+
+      if(prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          if(currentPage > 1) showPage(currentPage - 1);
+        });
+      }
+      if(nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          if(currentPage < 14) showPage(currentPage + 1);
+        });
+      }
+    }
+  }
+
+  // Page 1 next button
+  document.getElementById('next-1').addEventListener('click', () => {
+    showPage(2);
+  });
+
+  // Login form submit
+  document.getElementById('login-form').addEventListener('submit', e => {
+    e.preventDefault();
+    // Simple validation
+    const email = e.target.email.value.trim();
+    const password = e.target.password.value.trim();
+    if(!email || !password) {
+      alert('يرجى إدخال البريد الإلكتروني وكلمة المرور');
+      return;
+    }
+    alert('تم تسجيل الدخول بنجاح');
+    // Here you can add code to save login info to Excel or backend
+  });
+
+  // Book image upload preview
+  const bookImageUpload = document.getElementById('book-image-upload');
+  const bookImagePreview = document.getElementById('book-image-preview');
+  bookImageUpload.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if(file) {
+      const reader = new FileReader();
+      reader.onload = function(ev) {
+        bookImagePreview.src = ev.target.result;
+        bookImagePreview.alt = `صورة غلاف الكتاب ${file.name}`;
+      };
+      reader.readAsDataURL(file);
+    } else {
+      bookImagePreview.src = "https://placehold.co/150x200/png?text=صورة+الكتاب";
+      bookImagePreview.alt = "صورة كتاب افتراضية بمقاس 150x200 بيكسل، غلاف كتاب ملون مع عنوان واضح";
+    }
+  });
+
+  // Download book button (simulate download)
+  document.getElementById('download-book').addEventListener('click', () => {
+    const bookName = document.getElementById('book-name').value.trim();
+    if(!bookName) {
+      alert('يرجى إدخال اسم الكتاب أولاً');
+      return;
+    }
+    alert(`سيتم تنزيل الكتاب: ${bookName} (محاكاة)`);
+  });
+
+  // Delete book button
+  document.getElementById('delete-book').addEventListener('click', () => {
+    if(confirm('هل أنت متأكد من حذف بيانات الكتاب؟')) {
+      document.getElementById('book-image-upload').value = '';
+      bookImagePreview.src = "https://placehold.co/150x200/png?text=صورة+الكتاب";
+      bookImagePreview.alt = "صورة كتاب افتراضية بمقاس 150x200 بيكسل، غلاف كتاب ملون مع عنوان واضح";
+      document.getElementById('book-name').value = '';
+      document.getElementById('book-category').value = '';
+      alert('تم حذف بيانات الكتاب');
+    }
+  });
+
+  // Add survey link button
+  document.getElementById('add-survey-link').addEventListener('click', () => {
+    const container = document.getElementById('survey-links-container');
+    const input = document.createElement('input');
+    input.type = 'url';
+    input.placeholder = 'أدخل رابط الاستبيان';
+    input.className = 'w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600';
+    container.appendChild(input);
+  });
+
+  // Suggestions form submit
+  document.getElementById('suggestions-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const suggestion = document.getElementById('suggestion-text').value.trim();
+    if(!suggestion) {
+      alert('يرجى كتابة اقتراح لتحسين خدمات المكتبة');
+      return;
+    }
+    alert('تم استلام اقتراحك، شكراً لمساهمتك!');
+    e.target.reset();
+    // Here you can add code to save suggestion to Excel or backend
+  });
+
+  // Chat bot logic (simple simulation)
+  const chatForm = document.getElementById('chat-form');
+  const chatInput = document.getElementById('chat-input');
+  const chatContainer = document.getElementById('chat-container');
+
+  // Predefined answers for each page
+  const chatAnswers = {
+    1: "هذه هي الواجهة الترحيبية لمكتبة كلية التربية النوعية – جامعة المنوفية. كيف يمكنني مساعدتك؟",
+    2: "للتسجيل، يرجى إدخال بريدك الإلكتروني وكلمة المرور ثم الضغط على تم.",
+    3: "يمكنك التواصل مع المكتبة عبر البريد الإلكتروني librarynawaya.com أو الهاتف 01027318921.",
+    4: "يرجى الالتزام بالتعليمات للحفاظ على النظام داخل المكتبة.",
+    5: "اختر الفئة التي تنتمي إليها للاستفادة من خدمات المكتبة.",
+    6: "يمكنك إضافة كتاب جديد برفع صورة الكتاب وكتابة اسمه واختيار القسم المناسب.",
+    7: "يرجى الالتزام بإرشادات الاستعارة الموضحة في الجدول.",
+    8: "يمكنك حجز الكتب المتوفرة أو غير المتوفرة حسب اختيارك.",
+    9: "تقدم المكتبة العديد من الخدمات مثل الإرشاد والبحث، الاطلاع الداخلي، التصوير، وغيرها.",
+    10: "يمكنك إضافة مقالات عن الدورات والورش التي تقوم بها المكتبة.",
+    11: "يمكنك إضافة روابط الاستبيانات للمشاركة في تقييم خدمات المكتبة.",
+    12: "أنا هنا للرد على استفساراتك حول الموقع وخدمات المكتبة.",
+    13: "اتحاد مكتبات الجامعات المصرية وبنك المعرفة المصري يوفران مصادر معرفية هامة.",
+    14: "يمكنك إرسال اقتراحات لتحسين خدمات المكتبة عبر صفحة المقترحات."
+  };
+
+  chatForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const userText = chatInput.value.trim();
+    if(!userText) return;
+    // Add user message
+    const userMsg = document.createElement('div');
+    userMsg.className = 'self-end bg-blue-600 text-white px-4 py-2 rounded max-w-xs break-words';
+    userMsg.textContent = userText;
+    chatContainer.appendChild(userMsg);
+    chatInput.value = '';
+    chatContainer.scrollTop = chatContainer.scrollHeight;
+
+    // Simulate bot response after short delay
+    setTimeout(() => {
+      const botMsg = document.createElement('div');
+      botMsg.className = 'self-start bg-gray-300 text-gray-900 px-4 py-2 rounded max-w-xs break-words';
+      // Simple keyword matching for demo
+      let answer = chatAnswers[currentPage] || "عذراً، لا أستطيع الإجابة على هذا السؤال حالياً.";
+      botMsg.textContent = answer;
+      chatContainer.appendChild(botMsg);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }, 700);
+  });
+
+  addNavButtonsListeners();
+  showPage(1);
+  </script>
+ </body>
+</html>
